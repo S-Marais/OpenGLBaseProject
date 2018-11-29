@@ -1,0 +1,9 @@
+# Directories
+.idea/
+cmake-build-debug/
+cmake-build-release/
+.vs/
+.vscode/
+
+# Files
+*.user
