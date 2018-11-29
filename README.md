@@ -26,7 +26,7 @@ If all went well you should be able to compile and run the project and see a win
 The generated binaries for this project and its dependencies are all packed in a `bin` folder. That includes third party
 libraries like `glfw` and `glew`. For instance with CLion the folder is in `cmake-build-debug` or `cmake-build-release`.
 
-All third party libraries are compiled as shared libraries.K
+All third party libraries are compiled as shared libraries.
 
 Happy coding!
 
