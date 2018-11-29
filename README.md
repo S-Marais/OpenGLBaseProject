@@ -17,4 +17,9 @@ git clone --recursive https://github.com/S-Marais/OpenGLBaseProject.git OpenGLBa
 ```
 This will download this project as well as its dependencies and especially the ones for glew. (this will take some time).
 
-Once this is done 
+Once this is done make sure `libs/glew` has an `include/GL` folder with `glew.h` and that this newly created folder is 
+detected by your IDE.
+
+If all went well you should be able to compile and run the project and see a window with a blue background.
+
+Happy coding!
