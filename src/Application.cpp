@@ -6,7 +6,7 @@ int main(int argc, char **argv) {
     /// We are setting up a basic lambda function so that glfw can send us error messages when needed
     glfwSetErrorCallback([](int error, const char *message){
         std::cerr << "[ GLFW Error ] ( " << error << " ) : " << message << std::endl;
-    })
+    });
 
     /// We initialize glfw and exiting is something went wrong. glfwInit reply true or false if it was
     /// successful. most errors should be sent to error callback so we exit the app since we have nothing
@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
     glfwSetKeyCallback(window, [](GLFWwindow *window, int key, int scancode, int action, int mods){
         switch(key) {
             case GLFW_KEY_ESCAPE: {
-                glfwSetWindowShouldClose(window);
+                glfwSetWindowShouldClose(window, GLFW_TRUE);
             } break;
             default:
                 ;

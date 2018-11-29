@@ -27,8 +27,21 @@ target_include_directories(
 add_subdirectory(libs/glew)
 add_subdirectory(libs/glfw)
 
-target_link_libraries(
-        OpenGLBaseProject
+set(
+        PROJECT_LIBRARIES
         glew
         glfw
+)
+
+if (UNIX AND NOT APPLE)
+    set(
+            PROJECT_LIBRARIES
+            GL
+            ${PROJECT_LIBRARIES}
+    )
+endif()
+
+target_link_libraries(
+        OpenGLBaseProject
+        ${PROJECT_LIBRARIES}
 )

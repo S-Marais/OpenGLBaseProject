@@ -15,4 +15,6 @@ in a `Terminal` enter the command below:
 ```bash
 git clone --recursive https://github.com/S-Marais/OpenGLBaseProject.git OpenGLBaseProject
 ```
-This will download this project as well as 
+This will download this project as well as its dependencies and especially the ones for glew. (this will take some time).
+
+Once this is done 
